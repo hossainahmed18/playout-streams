@@ -1,6 +1,13 @@
-const DrmDash =()=> {
-    return (
-      <h1>This is drm dash </h1>
-    );
-  }
-  export default DrmDash;
+import VideoPlayer from '../VideoPlayer';
+
+const DrmDash = () => {
+  const manifestUrl = '';
+  return (
+    <>
+      <h1>Dash with drm</h1>
+      <VideoPlayer manifestUrl={manifestUrl} />
+    </>
+
+  );
+}
+export default DrmDash;
