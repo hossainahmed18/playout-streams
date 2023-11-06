@@ -10,10 +10,6 @@ const routes = createBrowserRouter([
       element: <h1>Playing streams!</h1>,
     },
     {
-        path: "/",
-        element: <h1>Playing streams!</h1>,
-    },
-    {
         path: "/drm-dash",
         element: <DrmDash/>,
     },{
