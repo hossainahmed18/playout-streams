@@ -20,7 +20,7 @@ const VideoPlayer = ({ manifestUrl, isDrmEnabled, mediaFormat }) => {
 
   useEffect(() => {
     shaka.polyfill.installAll();
-    if (mediaFormat === dashMediaFormat) {
+    if (mediaFormat === hlsMediaFormat) {
       shaka.polyfill.PatchedMediaKeysApple.install();
     }
 
