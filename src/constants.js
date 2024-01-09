@@ -1,12 +1,12 @@
 
 const dashMediaFormat = 'dash';
 const widevineServerUri = '';
-const widevineCertificateUri = '';
+const widevineCertificateUri = ''; //not used
 const widevineLicenceToken = '';
 const widevineLicenceRequestHeader = 'x-dt-auth-token';
 const widevineDrmType = 'com.widevine.alpha';
 
-const hlsMediaFormat = 'dash';
+const hlsMediaFormat = 'hls';
 const fairplayServerUri = '';
 const fairplayCertificateUri = '';
 const fairplayLicenceToken = '';
