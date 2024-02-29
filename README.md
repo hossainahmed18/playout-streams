@@ -69,8 +69,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-#How to Play the Drm streams
+### How to Play the Drm streams
+
 Put licence server uri
+
 Give the Licence request header
+
 Give the Licence request header value
+
 For playing the Hls streams, need to put correct fairplay Certificate Uri
