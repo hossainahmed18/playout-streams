@@ -5,6 +5,7 @@ import DrmDash from "./drm/dash-stream";
 import DrmHls from "./drm/hls-stream";
 import NonDrmHls from "./non-drm/hls-stream";
 import EdgioHlsWithDrm from "./drm/edgio-hls-stream";
+import NonDrmHlsJs from "./hls-js/hls-js-non-drm";
 
 
 const routes = createBrowserRouter([
@@ -26,6 +27,10 @@ const routes = createBrowserRouter([
     {
         path: "/edgio-hls-drm",
         element: <EdgioHlsWithDrm/>,
+    },
+    {
+        path: "/non-drm-hls-js",
+        element: <NonDrmHlsJs/>,
     }
 ]);
 
