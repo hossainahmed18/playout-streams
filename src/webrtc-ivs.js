@@ -96,3 +96,20 @@ export default function App() {
     </div>
   );
 }
+
+import { IVSRealTimeClient, CreateParticipantTokenCommand } from "@aws-sdk/client-ivs-realtime"
+
+export const handler = async (event) => {
+    const client = new IVSRealTimeClient({region: 'eu-central-1'});
+
+    const command = new CreateParticipantTokenCommand({
+        stageArn: "",
+        capabilities: ["SUBSCRIBE"],
+        duration: 300,
+    });
+
+    const response = await client.send(command);
+    console.log("Success", response);
+    console.log(JSON.stringify(response, null, 2));
+    return response;
+};
